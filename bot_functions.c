@@ -249,8 +249,7 @@ void *movebot(void *nullhere) {
                 else break;
             }  
         }
-        pmap->move=cw[dir];
-        mvprintw(14,MAXSIZE+2,"Random no: %d  ", rnd);       
+        pmap->move=cw[dir];    
         pthread_mutex_unlock(&mtx);
         usleep(400000);
     }
